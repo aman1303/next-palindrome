@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <title>Palindrome</title>
+</head>
+
+<body style="background-color: gray;">
+    
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Try Again</a>
+    </nav>
+    
+    
+    <div class="container" style="border: 1px white solid;
+        margin-top: 50px;
+        font-family: cursive;
+        ">
+        <div class="row">
+            <div class="col">
+                <h1 style="color: white;">Next Pallindrome</h1>
+                <hr>
+                <form action="/" method="POST">
+                    <div class="form-group">
+                      <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
+                      <textarea class="form-control" type="number" id="exampleFormControlTextarea1" rows="1" placeholder="Type a number here" name="number"></textarea>
+                    </div>
+                    <div class="button">
+                    <button type="submit" class="btn btn-primary" style="background-color:gray; border-style:groove; margin-bottom: 5px;">Press Me</button>
+                    </div>
+                  </form>
+            
+            
+            
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, flash
+import math
 
 app = Flask(__name__)
 
@@ -11,12 +12,13 @@ def index ():
 
         number = req["number"]
 
-        print(number)
 
         i = 1
         try:
+            num_float = float(number)
+            num = math.floor(num_float)
             while True:
-                b = int(number) + i
+                b = num + i
                 i += 1
                 b = str(b)
                 if b == b[::-1]:
@@ -34,7 +36,3 @@ def index ():
 
 if __name__ == ("__main__"):
     app.run(debug=True)
-
-
-
-# a = int(input("tyoe a number: "))
